@@ -1,0 +1,699 @@
+/*
+	Author: Rachel Lewis
+	Style sheet for personal portfolio site
+	CSS for index.html
+*/
+
+/* Box sizing for all elements */
+* {
+	box-sizing: border-box;
+}
+
+/* Styling for all elements */
+body, html {
+    height: 100%;
+    color: #3c3c3c;
+    line-height: 1.8;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Extra small devices (phones, 550px and down) */
+@media only screen and (max-width: 550px) {
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-2 { 
+        width: 16.66%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 550px and up) */
+@media only screen and (min-width: 550px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-l-1 {
+        width: 8.33%;
+    }
+    .col-l-2 {
+        width: 16.66%;
+    }
+    .col-l-3 {
+        width: 25%;
+    }
+    .col-l-4 {
+        width: 33.33%;
+    }
+    .col-l-5 {
+        width: 41.66%;
+    }
+    .col-l-6 {
+        width: 50%;
+    }
+    .col-l-7 {
+        width: 58.33%;
+    }
+    .col-l-8 {
+        width: 66.66%;
+    }
+    .col-l-9 {
+        width: 75%;
+    }
+    .col-l-10 {
+        width: 83.33%;
+    }
+    .col-l-11 {
+        width: 91.66%;
+    }
+    .col-l-12 {
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-xl-1 {
+        width: 8.33%;
+    }
+    .col-xl-2 {
+        width: 16.66%;
+    }
+    .col-xl-3 {
+        width: 25%;
+    }
+    .col-xl-4 {
+        width: 33.33%;
+    }
+    .col-xl-5 {
+        width: 41.66%;
+    }
+    .col-xl-6 {
+        width: 50%;
+    }
+    .col-xl-7 {
+        width: 58.33%;
+    }
+    .col-xl-8 {
+        width: 66.66%;
+    }
+    .col-xl-9 {
+        width: 75%;
+    }
+    .col-xl-10 {
+        width: 83.33%;
+    }
+    .col-xl-11 {
+        width: 91.66%;
+    }
+    .col-xl-12 {
+        width: 100%;
+    }
+}
+
+/* Clears the floats before and after grid rows */
+.row::before, .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Modifies the columns in all grid layouts */
+.col {
+    float: left;
+    padding: 25px;
+}
+
+/* Hide the modal portfolio version initially, and display the simple portfolio version on smaller and mobile screens */
+.larger-screen-modal-portfolio {
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+	.small-screen-simple-portfolio {
+		display: none;
+	}
+	.larger-screen-modal-portfolio {
+		display: block;
+	}
+}
+
+/* Modifies the top nav bar */
+.topnav {
+	background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    color: rgba(0, 0, 0, 0.6); /* Half-transparent black */
+	display: block;
+	height: 40px;
+	left: 0;
+    letter-spacing: 1px;
+	line-height: 40px; /* vertically aligns the text in the middle */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* The initial display for the top-nav-links is hidden (on smallest devices) */
+.top-nav-links {
+	display: none;
+	float: left;
+}
+
+/* Float the icon to the right */
+.icon {
+	float: right;
+}
+
+/* Show the nav links, hide the icon on devices with a min screen width of 600px */
+@media only screen and (min-width: 600px) {
+	.top-nav-links {
+		display: block;
+	}
+	.icon {
+		display: none;
+	}
+}
+
+/* The JavaScript function openFunction() adds the responsive class to the topnav when a user clicks on the icon. */
+@media screen and (max-width: 600px) {
+	/* Keeps the icon in the top right position */
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	/* Modify the top-nav height and line-height to show all links vertically */
+	.topnav.responsive {
+		display: block;
+		float: left;
+		height: 175px;
+		letter-spacing: 1px;
+		line-height: 35px; /*Creates five lines on a 175px height */
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	.topnav.responsive a {
+		color: inherit;
+		clear: left;
+		display: block;
+		float: left;
+		padding: 0px 20px;
+		text-decoration: none;
+	}
+}
+
+/* Modify the top-nav-links and the three-bar icon on the topnav*/
+.top-nav-links, .icon {
+	color: inherit;
+	padding: 0px 15px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+/* Clear the floats after the topnav */
+.topnav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style the topnav links on hover */
+.topnav a:hover {
+    color: #000;
+    background-color: #ccc;
+	font-weight: bold;
+	transition: background-color .3s;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+}
+
+/* Create a Parallax effect with background images */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First background Parallax image */
+.bgimg-1 {
+    background-image: url("Images/home_background.jpg"); /*Image of working on computer */
+    min-height: 100%; /* Full height */
+	position: relative;
+	opacity: 0.75;
+	margin: -10px;
+}
+
+/* CSS for the name in front of the first Parallax image */
+.headline {
+	position: absolute; /*Position horizontally and vertically centered */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	white-space: nowrap;
+}
+
+/* Style the words written over the parallax images */
+.parallax-font {
+	font-size: 200%;
+	color: #FFF;
+	letter-spacing: 4px;
+}
+
+/* Make the parallax fonts larger on larger devices */
+@media only screen and (min-width: 768px) {
+    .parallax-font {
+	font-size: 300%;
+	color: #FFF;
+	letter-spacing: 4px;
+	}
+}
+
+/* Styling the "About Me" section */
+#about {
+	max-width: 980px;
+	margin: auto;
+	padding: 64px 16px;
+} #about h2 {
+	text-align: center;
+	font-family: 'Esteban', serif;
+	letter-spacing: 1px;
+	font-size: 175%;
+} #about h3 {
+	font-family: 'Esteban', serif;
+	letter-spacing: 1px;
+	font-size: 125%;
+}
+
+/* Modifying the container holding the skills icons */
+.skill-icon-container {
+	padding: 24px 0px 14px 0px;
+	max-width: 540px;
+	text-align: center;
+	margin: auto;
+}
+
+/* Defining layout for skill icons */
+.skill-icon {
+	margin: 1%;
+	font-size: 500%;
+}
+
+/* Style skill icons on hover */
+.skill-icon:hover {
+	opacity: 0.75;
+}
+
+/* Defining layout for badge icons */
+.badge-icon {
+	margin: 2%;
+}
+
+/* Style badge icons on hover */
+.badge-icon:hover {
+	opacity: 0.75;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("Images/portfolio_background.jpg");
+    min-height: 650px;
+	opacity: 0.75;
+	position: relative;
+	clear: left;
+	margin: -10px;
+}
+
+/*Modify the portfolio container */
+#portfolio {
+	max-width: 1250px;
+	margin: auto;
+	padding: 64px 16px;
+} 
+
+/* Modify the h2 in portfolio section*/
+#portfolio h2 {
+	text-align: center;
+	font-family: 'Esteban', serif;
+	letter-spacing: 1px;
+	font-size: 175%;
+}
+
+/* Styling the modal thumbnails in portfolio section */
+.thumbnail-img img{
+	max-width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: auto;
+	display: block;
+}
+
+/* Styles the container holding the thumbnail img and title */
+.modal-thumbnail-container {
+    position: relative; 
+    max-width: 500px; /* Maximum image width */
+    margin: 0 auto; /* Center */
+}
+
+/* Positions the project title that displays over the thumbnail on hover */
+.modal-thumbnail-container h4 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+	display: none;
+}
+
+/* Shows the project title over the thumbnail image on hover */
+.modal-thumbnail-container:hover h4 {
+	display: block;
+}
+
+/* Cursor is a poitner on hover */
+.modal-thumbnail-container:hover {
+	cursor: pointer; 
+}
+
+/* Modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+/* Modal content*/
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.95); /* white with opacity */
+    margin: 3% auto; /* 3% from the top and centered */
+    padding: 15px 35px 35px 35px;
+    border: 1px solid #888;
+    width: 75%;
+}
+
+/* Adding padding above and below modal-content paragraph elements */
+.modal-content p {
+	padding: 15px 0;
+}
+
+/* The header in the modal (with project name) */
+.modal-header {
+	text-align: center;
+	color: #404040;
+	letter-spacing: 2px;
+	font-family: 'Esteban', serif;
+}
+
+/* Close button in modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 225%;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modify the container for holding work examples */
+.examples-container {
+	position: relative;
+	bottom: 0;
+	padding-top: 42%;
+	display: block;
+	margin-top: 64px;
+}
+
+/* Display desktop sample */
+.desktopImg {
+	position: absolute;
+	bottom: 0;
+	margin-left: 0;
+	width: 90%;
+	border: 9px solid #404040;
+}
+
+/* Display tablet sample layered with desktop and phone with a border that creates tablet effect */
+.tabletImg {
+	position: absolute;
+	bottom: 0;
+	margin-left: 35%;
+	width: 60%;
+	border: 8px #404040 solid;
+	border-left-width: 30px;
+	border-right-width: 30px;
+	border-radius: 18px;
+}
+
+/* Display phone sample on top of tablet and desktop, to the far right, with a border that creates phone effect */
+.phoneImg {
+	position: absolute;
+	bottom: 0;
+	margin-left: 80%;
+	width: 20%;
+	border: 8px #404040 solid;
+	border-top-width: 30px;
+	border-bottom-width: 30px;
+	border-radius: 18px;
+}
+
+/* Display the JS screen capture images as similar to the desktop image samples */
+.JS-img {
+	position: absolute;
+	bottom: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+	border: 6px solid #404040;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+/* Styles the container holding the portfolio links */
+.portfolio-links-container {
+	text-align: center;
+	margin-top: 12px;
+}
+
+/* Modifies the "demo", "code", etc. links in portfolio section */
+.portfolio-links {
+	display: inline-block;
+	text-align: center;
+	padding: 6px 12px;
+	color: white;
+	background-color: #797979;
+	text-decoration: none;
+	letter-spacing: 4px;
+	font-family: 'Esteban', serif;
+}
+
+/* Modifies the "demo", "code", etc. links in portfolio section */
+.portfolio-links a:link, .portfolio-links a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+/* Modifies the portfolio links on hover */
+.portfolio-links:hover {
+	color: #cfcfcf;
+	background-color: #404040;
+}
+
+/* Modifies the container of portfolio thumbnails on small screens */
+.small-screen-portfolio-container {
+	padding: 20px 0;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*Modifies the project titles in the small screen portfolio container */
+.small-screen-portfolio-container h4 {
+	text-align: center;
+	letter-spacing: 1px;
+} .small-screen-portfolio-container p {
+	text-align: justify;
+}
+
+
+/* Third parallax image (Contact) */
+.bgimg-3 {
+    background-image: url("Images/contact_background.jpg");
+    min-height: 650px;
+	opacity: 0.75;
+	position: relative;
+	margin: -10px;
+}
+
+/* The container holding the "download resume" button */
+.resume-link-container {
+	text-align: center;
+	padding: 60px 0 25px 0;
+}
+
+/* Styling the "Contact" section */
+#contact {
+	max-width: 980px;
+	margin: auto;
+	padding: 64px 16px;
+} #contact h2 {
+	text-align: center;
+	font-family: 'Esteban', serif;
+	letter-spacing: 1px;
+	font-size: 175%;
+}
+
+/* Modifies the email button in the "Contact" section and the download resume button in "Portfolio" section */
+.contact-link {
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	color: black;
+	border: 3px solid #797979;
+	text-decoration: none;
+	letter-spacing: 4px;
+	font-family: 'Esteban', serif;
+	font-size: 115%;
+	margin: 15px;
+}
+
+/* Modifies the email button in the "Contact" section */
+.contact-link:hover {
+	color: #cfcfcf;
+	background-color: #404040;
+}
+
+/* Styles the footer */
+#footer {
+	text-align: center;
+}
