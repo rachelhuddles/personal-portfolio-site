@@ -1,0 +1,406 @@
+/* Styling all links on page */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* About section: font */
+#about-me p {
+	letter-spacing: 1px;
+	font-size: 70%;
+	filter: brightness(130%);
+}
+
+/* About section: RWD */
+@media(max-width: 1000px) {
+	#about-me p {
+		font-size: 65%;
+	}
+}
+
+@media(max-width: 800px) {
+	#about-me p {
+		font-size: 55%;
+	}
+}
+
+@media(max-width: 720px) {
+	#about-me {
+		font-size: 45%;
+	}
+}
+
+@media(max-width: 660px) {
+	#about-me {
+		font-size: 40%;
+	}
+	.container-fluid section:nth-child(5) {
+		height: 100%;
+		background-color: rgb(92,91,90);
+		opacity: 1.0;
+	}
+}
+
+body {
+	background-color: #eae7dc;
+   	font-family: 'Montserrat', sans-serif;
+	opacity: 1;
+	padding-top: 65px;
+    transition: 1s opacity;
+}
+
+/* Used on portfolio pages transition */
+body.fade-out {
+	opacity: 0;
+   	transition: none;
+}
+
+/* Font on all buttons */
+.btn {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1px;
+}
+
+.btn-150-width {
+	width: 150px;
+}
+
+.carousel-caption {
+	background-color: rgba(40, 38, 37, .9);
+    bottom: 0;
+    color: #f5f4ef;
+	font-size: 75%;
+    left: 0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+.carousel-caption h5 {
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1.5px;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Makes the carousel image responsive */
+.carousel-inner img {
+	height: 100%;
+	width: 100%;
+}
+
+.container-fluid section {
+	background-color: #000;
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.container-fluid section .parallax-content {
+    color: #ebe9e0;
+	display: flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+    font-size: 26px;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 95%;
+    z-index: 1000;
+}
+
+@media(min-width: 980px) {
+	.container-fluid section .parallax-content {
+		width: 80%;
+	}
+}
+
+/* Parallax background images */
+.container-fluid section .image {
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+	opacity: 0.4;
+    position: absolute;
+	width: 100%;
+    z-index: 500;
+}
+
+.container-fluid section:nth-child(1) .image {
+    background-image: url(background1.jpg);
+	height: 100vh;
+}
+
+.container-fluid section:nth-child(2) .image {
+    background-image: url(background2.jpg);
+	height: 100vh;
+}
+
+.container-fluid section:nth-child(3) .image {
+    background-color:#a8a6a4;
+	height: 100vh;
+	opacity: .55;
+}
+
+.container-fluid section:nth-child(4) .image {
+    background-image: url(background3.jpg);
+	height: 100vh;
+}
+
+.container-fluid section:nth-child(5) .image {
+    background-color:#a8a6a4;
+	opacity: .55;
+	height: 100vh;
+}
+
+.container-fluid section:nth-child(6) .image {
+    background-image: url(background4.jpg);
+	height: 100vh;
+}
+
+.container-fluid section:nth-child(7) .image {
+    background-color:#a8a6a4;
+	opacity: .55;
+	height: 100vh;
+}
+
+/* Smaller background images on mobile devices */
+@media screen and (max-width: 1200px) {
+	.container-fluid section .image {
+		background-attachment: scroll;
+	}	
+	.container-fluid section:nth-child(1) .image {
+		background-image: url(background1-small.jpg);
+		height: 100%;
+	}
+	.container-fluid section:nth-child(2) .image {
+		background-image: url(background2-small.jpg);
+		max-width: 100%;
+	}
+	.container-fluid section:nth-child(4) .image {
+		background-image: url(background3-small.jpg);
+		height: 100%;
+	}
+	.container-fluid section:nth-child(6) .image {
+		background-image: url(background4-small.jpg);
+		max-height: 100vh;
+	}
+}
+
+.container-fluid section .parallax-content h1 {
+    color: #f5f4ef;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    letter-spacing: 1.5px;
+}
+
+.container-fluid section .parallax-content h3 {
+    color: #f5f4ef;
+    font-family: 'Merriweather', serif;
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    margin: 0px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Horizontal lines around section header */
+.container-fluid section .section-header:before, .container-fluid section .section-header:after {
+	background-color: #f5f4ef;
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 30px 0;
+ 	width: 100%;
+}
+
+/* Font awesome icons */
+.far {
+	color: #f5f4ef;
+}
+
+.faa-pulse.animated, .faa-pulse.animated-hover:hover, .faa-parent.animated-hover:hover > .faa-pulse {
+    -webkit-animation: pulse 3s linear infinite;
+    animation: pulse 3s linear infinite;
+}
+
+/* Pulse animation */
+@-webkit-keyframes pulse {
+	0% {
+         -webkit-transform: scale(1.1);
+         transform: scale(1.1);
+    }
+     50% {
+         -webkit-transform: scale(0.8);
+         transform: scale(0.8);
+    }
+     100% {
+         -webkit-transform: scale(1.1);
+         transform: scale(1.1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+/* Navbar color scheme */
+.navbar {
+    background-color: #eae7dc;
+    border: none;
+    box-shadow: 0 7px 14px rgba(50,50,93,.05), 0 3px 6px rgba(0,0,0,.03);
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+
+.portfolio-section {
+    align-content: center;
+    align-items: center;
+	background: rgb(40, 38, 37);
+	color: #f5f4ef;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+
+.portfolio-section h1{
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+.portfolio-section h2{
+	font-variant: small-caps;
+    letter-spacing: 3px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.portfolio-section p{
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Portfolio carousel indicators */
+#portfolio_carousel .carousel-indicators {
+    margin: 10px 0 0;
+    overflow: auto;
+    position: static;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#portfolio_carousel .carousel-indicators li {
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    margin: 2px;
+    -webkit-border-radius: 0;
+    width: auto;
+}
+
+#portfolio_carousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 772px) {
+	#portfolio_carousel .carousel-indicators li img {
+		display: none;
+	}	
+}
+
+#portfolio_carousel .carousel-indicators li.active img {
+    opacity: 1;
+}
+
+#portfolio_carousel .carousel-indicators li:hover img {
+    opacity: 0.75;
+}
+
+#portfolio_carousel .carousel-outer {
+    position: relative;
+}
+
+@media only screen and (max-width: 771px) {
+	.show-small-screen {
+		display: inline-block;
+	}	
+}
+
+@media only screen and (min-width: 772px) {
+	.show-small-screen {
+		display: none;
+	}	
+}
+
+/* Used to "raise" elements on hover */
+.raise-hover {
+	transition: all .25s;
+}
+
+.raise-hover:hover {
+	transform: translateY(-2px);
+	text-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.video {
+	margin: 20px auto;
+	position: relative;
+	width: 85%;
+}
+
+.view-demo {
+	color: #d8d4c0;
+	font-family: 'Merriweather', serif;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+}
+
+.view-demo:hover {
+	color: #e2dfd0;
+	font-weight: 500;
+	letter-spacing: 2.5px;
+}
+
+
+
+
+

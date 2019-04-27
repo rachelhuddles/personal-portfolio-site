@@ -1,597 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Rachel Lewis | Portfolio</title>
-	<meta charset="UTF-8">
+	<title>Rachel H. Lewis | Portfolio</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="index_style.css"> <!-- Link to external style sheet -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- JQuery library-->
-	<link href="https://fonts.googleapis.com/css?family=Esteban|Montserrat" rel="stylesheet"> <!-- Google fonts -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google icons -->
-	<!-- Devicon links -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- HTML icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- CSS icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- Java icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- JavaScript icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- jQuery icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- WordPress icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- Bootstrap icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- MySQL icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- Python icon -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> <!-- PHP icon -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Montserrat" rel="stylesheet">
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+	<a class="navbar-brand" href="index.html">Rachel H. Lewis <br><span class="small"><em class="small">Full-Stack Developer</em></span></a>
+	<!-- Collapses navbar on small screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+	<!-- Navbar links -->
+    <div class="navbar-collapse collapse justify-content-stretch" id="topnavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-<!-- Section: navbar -->
-	<div class="topnav" id="navbar">
-		<a href="#home" class="top-nav-links">HOME</a>
-		<a href="#about" class="top-nav-links">ABOUT</a>
-		<a href="#portfolio" class="top-nav-links">PORTFOLIO</a>
-		<a href="#contact" class="top-nav-links">CONTACT</a>
-		<a href="Blog/index.html" class="top-nav-links">BLOG</a>
-		<a href="javascript:void(0);" class="icon" onclick="openFunction()">☰ </a>
-	</div>
-
-
-<!-- Section: Home background image (First Parallax image with name centered across it) -->
-<div class="bgimg-1" id="home">
-	<div class="headline">
-		<span class="parallax-font">Rachel H. Lewis</span>
-	</div>
-</div>
-
-<!-- Section: About Me -->
-<div id="about">
-	<h2>ABOUT ME</h2>
-		<h3>Hi! I'm Rachel and I'm a Computer Science and Information Technology student. Here are a few things you should know about me:</h3>
-		<p><b>I am currently pursuing a B.S. in Computer Information Technology at Austin Peay State University.</b>
-		My study concentration is Database Administration, which trains students in the design, implementation, and administration of databases, 
-		including those accessed by Web applications.</p>
-		<p><b>I am naturally curious and love learning new things.</b>
-		In my spare time, I enjoy taking extra professional development courses to help cultivate my interests. 
-		Currently, I am most interested in algorithms and machine learning.</p>
-		<p><b>I have a second Bachelor's degree in Child Development and Learning.</b>
-		I spent a year as an elementary school teacher prior to pursuing this Computer Science and Information Technology degree.
-		It was a desire to create apps, websites, and educational software for my own classroom that sparked my interest in coding and technology. 
-		I still work with elementary-aged kids, including directing and leading a STEM camp. I remain passionate about spreading the joy of learning and creating an
-		 interest in the limitless possibilities of technology!</p>
-		<p><b>Thank you for taking the time to check out my site! Have a look around and enjoy seeing what I have created!</b></p>
+<!-- Main container -->
+<div class="container-fluid ">
+	<!-- First section -->
+	<section>
+		<div class="image" data-type="background" data-speed="2"></div>
+		<div class="parallax-content" data-type="content"><span class="pb-5 section-header"><h1>Rachel H. Lewis</h1><h3>Full-Stack Developer</h3></span><a href="#portfolio"><i class="pt-3 far fa-arrow-alt-circle-down faa-pulse animated fa-2x"></i></a></div>
 		
-	<div class="skill-icon-container">
-	<h2>SKILLS</h2>
-		<!-- HTML icon -->
-		<i class="devicon-html5-plain-wordmark skill-icon"></i>
-		<!-- CSS icon -->
-		<i class="devicon-css3-plain-wordmark skill-icon"></i>
-		<!-- JavaScript icon -->
-		<i class="devicon-javascript-plain skill-icon"></i>
-		<!-- jQuery icon -->
-		<i class="devicon-jquery-plain-wordmark skill-icon"></i>
-		<!-- Bootstrap icon -->
-		<i class="devicon-bootstrap-plain-wordmark skill-icon"></i>
-		<!-- Java icon -->
-		<i class="devicon-java-plain-wordmark skill-icon"></i>
-		<!-- WordPress icon -->
-		<i class="devicon-wordpress-plain-wordmark skill-icon"></i>
-		<!-- MySQL icon -->
-		<i class="devicon-mysql-plain-wordmark skill-icon"></i>
-		<!-- Python icon -->
-		<i class="devicon-python-plain-wordmark skill-icon"></i>
-		<!-- PHP icon -->
-		<i class="devicon-php-plain skill-icon"></i>
-	</div>
+	</section>
+
+	<!-- Section header: Featured Portfolio -->
+	<section id="portfolio">
+		<div class="image" data-type="background" data-speed="2"></div>
+		<div class="parallax-content" data-type="content"><h1 class="py-3 section-header">Portfolio</h1><a href="#portfolio-carousel"><i class="pt-3 far fa-arrow-alt-circle-down faa-pulse animated fa-2x"></i></a></div>
+	</section>
 	
-	<div class="skill-icon-container">
-		<h2>BADGES</h2>
-			<!-- IBM Data Science Foundations 1 badge -->
-			<a href="https://cognitiveclass.ai/badges/data-science-foundations-explorer/" target="_blank">
-				<img src="Images/Badges/DS-foundations1.png" alt="IBM Data Science Foundations 1 badge" class="badge-icon" style="width: 150px">
+	<!-- Section: Portfolio carousel -->
+	<section id="portfolio-carousel">
+		<div class="image" data-type="background" data-speed="0"></div>
+		<div class="parallax-content" data-type="content">
+			
+		<!-- Portfolio carousel -->
+		<div class="d-flex justify-content-center mt-5 mb-1">
+		<div id="portfolio_carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+		  
+			<!-- Carousel: Slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="Portfolio/AltardState/altard-state.html">
+						<img class="d-block w-100" src="Portfolio/AltardState/desktop.png" alt="Altar'd State Database desktop">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Altar'd State Database and Web Application</h5>
+							<p class="small">SQL Server <b>|</b> SQL <b>|</b> ASP.NET <b>|</b> VB <b>|</b> Bootstrap 4 <b>|</b> HTML <b>|</b> CSS <b>|</b> JavaScript <b>|</b> Continuous Deployment</p>
+							<p class="view-demo raise-hover">see more</p>							
+						</div>
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="Portfolio/SweetByNature/sweet-by-nature.html">
+						<img class="d-block w-100" src="Portfolio/SweetByNature/desktop.png" alt="Sweet by Nature desktop">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Sweet by Nature, Inc.</h5>
+							<p class="small">PostgreSQL <b><b>|</b></b> PHP <b>|</b> SQL <b>|</b> Bootstrap 4 <b>|</b> HTML <b>|</b> CSS <b>|</b> JavaScript</p>
+							<p class="view-demo raise-hover">see more</p>	
+						</div>
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="Portfolio/PortfolioV1/PortfolioV1.html">
+						<img class="d-block w-100" src="Portfolio/PortfolioV1/desktop.png" alt="Portfolio version 1 desktop">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Portfolio Website 1.0</h5>
+							<p class="small">HTML <b>|</b> CSS <b>|</b> JavaScript <b>|</b> jQuery</p>
+							<p class="view-demo raise-hover">see more</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		  
+			<!-- Carousel: Left and right controls -->
+			<a class="carousel-control-prev" href="#portfolio_carousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				<span class="sr-only">Previous</span>
 			</a>
-			<!-- IBM Data Science Foundations 2 badge -->
-			<a href="https://cognitiveclass.ai/badges/data-science-foundations-graduate/" target="_blank">
-				<img src="Images/Badges/DS-foundations2.png" alt="IBM Data Science Foundations 2 badge" class="badge-icon" style="width: 150px">
+			<a class="carousel-control-next" href="#portfolio_carousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				<span class="sr-only">Next</span>
 			</a>
-			<!-- IBM chatbot badge -->
-			<a href="https://cognitiveclass.ai/badges/build-your-own-chatbot/" target="_blank">
-				<img src="Images/Badges/chatbot.png" alt="IBM chatbot badge" class="badge-icon" style="width: 150px">
-			</a>
+			
+			<!-- Carousel: Indicators (images) -->
+			<ol class="carousel-indicators visible-sm-block hidden-xs-block visible-md-block visible-lg-block mb-2">
+				<li data-target="#portfolio_carousel" data-slide-to="0" class="active">
+				  <img src="as-thumbnail.jpg" alt="..." class="img-responsive">
+				</li>
+				<li data-target="#portfolio_carousel" data-slide-to="1">
+				  <img src="sweet-by-nature-thumbnail.jpg" alt="..." class="img-responsive">
+				</li>
+				<li data-target="#portfolio_carousel" data-slide-to="2">
+				  <img src="portfoliov1-thumbnail.jpg" alt="..." class="img-responsive">
+				</li>
+			</ol>			
+		</div></div>
+		
+		<!-- "Click to see more" on small screens -->
+		<span class="show-small-screen">
+			<p class="view-demo raise-hover"><i class="fas fa-search"></i> click on a project to view more</p>
+		</span>
 	</div>
-</div>
-		
-<!-- Section: Portfolio background image (Second Parallax Image with Portfolio Text) -->
-<div class="bgimg-2">
-	<div class="headline">
-		<span class="parallax-font">PORTFOLIO</span>
-	</div>
-</div>
+  </section>
 
-<!-- Section: Portfolio -->
-<div id="portfolio">
-	<h2>MY WORK</h2>
-	
-	<!-- MODAL PORTFOLIO VERSION ONLY SHOWN ON LARGER SCREENS -->
-	<div class="larger-screen-modal-portfolio">
-	<!-- Section: Modal triggers -->
-		<div class="row">
-			<!-- Project: Website Performance Optimization Project -->
-			<div class="col col-xs-12 col-s-12 col-m-12 col-l-4 col-xl-4 thumbnail-img">
-				<div id="modal-trigger7" class="modal-thumbnail-container">
-					<img src="Blog/wpo-project-thumbnail.png" alt="Website Performance Optimization Project thumbnail">
-					<h4>Website Performance Optimization Project</h4>
-				</div>
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="Blog/index.html" class="portfolio-links">BLOG</a> 
-					</div>	
-			</div>
-			<!-- Project: Personal portfolio -->
-			<div class="col col-xs-12 col-s-12 col-m-12 col-l-4 col-xl-4 thumbnail-img">
-				<div id="modal-trigger6" class="modal-thumbnail-container">
-					<img src="Images/portfolio_thumbnail.png" alt="Personal portfolio thumbnail">
-					<h4>Personal Portfolio Website</h4>
-				</div>
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://codepen.io/rhlewis/pen/GGPxya" target="_blank" class="portfolio-links">CODE</a> 
-					</div>	
-			</div>
-			<!-- Project: Chatbot and WordPress CMS -->
-			<div class="col col-xs-12 col-s-12 col-m-12 col-l-4 col-xl-4 thumbnail-img">
-				<div id="modal-trigger5" class="modal-thumbnail-container">
-					<img src="Portfolio/Portfolio_Screenshots/chatbot_thumbnail.png" alt="Chatbot project thumbnail">
-					<h4>WordPress E-Commerce Site with ChatBot</h4>
-				</div>
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://sweetpeachesandcreamtestsite.rachelhlewis.com" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to SPAC WordPress test site-->
-						<a href="https://github.com/rachelhuddles/daisy-chatbot" target="_blank" class="portfolio-links">JSON</a>
-					</div>	
-			</div>
-		</div>
-		<div class="row">
-			<!-- Project: Kira Chambers Design portfolio -->
-			<div class="col col-xs-12 col-s-12 col-m-12 col-l-4 col-xl-4 thumbnail-img">
-				<div id="modal-trigger4" class="modal-thumbnail-container">
-					<img src="Portfolio/Portfolio_Screenshots/KCD_thumbnail.png" alt="Kira Chambers Design portfolio thumbnail">
-					<h4>Graphic Designer Online Portfolio</h4>
-				</div>
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/KiraChambersDesign/index.html" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to KCD site demo -->
-						<a href="https://github.com/rachelhuddles/KCD-portfolio-site" target="_blank" class="portfolio-links">CODE</a> <!-- Link to KCD site code -->
-					</div>			
-			</div>
-			<!-- Project: Sweet Peaches and Cream E-Commerce site -->
-			<div class="col col-xs-12 col-s-12 col-m-12 col-l-4 col-xl-4 thumbnail-img">
-				<div id="modal-trigger3" class="modal-thumbnail-container">
-					<img src="Portfolio/Portfolio_Screenshots/SPC_thumbnail.png" alt="Sweet Peaches and Cream E-commerce site thumbnail">
-					<h4>Retail E-Commerce Test Site</h4>
-				</div>
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="Portfolio/SweetPeachesAndCream/index.html" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to SPC site demo -->
-						<a href="https://codepen.io/collection/DkBzpd/" target="_blank" class="portfolio-links">CODE</a> <!-- Link to SPC site code -->
-					</div>		
-			</div>
-			<!-- Project: JavaScript Arithmetic Functions  -->
-			<div class="col col-xs-12 col-s-12 col-m-12 col-l-4 col-xl-4 thumbnail-img">
-				<div id="modal-trigger2" class="modal-thumbnail-container">
-					<img src="Portfolio/Coursework/CSCI3300/q2/q2_thumbnail.png" alt="JavaScript Arithmetic Functions thumbnail">
-					<h4>Vanilla JavaScript Program</h4>
-				</div>
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/Coursework/CSCI3300/q2/index.htm" target="_blank" class="portfolio-links">DEMO</a> 
-						<a href="https://codepen.io/rhlewis/pen/vrpdqr" target="_blank" class="portfolio-links">CODE</a>
-					</div>
-			</div>
-		</div>
-		<div class="row">
-			<!-- Project: JavaScript Magic Square -->
-			<div class="col col-xs-12 col-s-12 col-m-12 col-l-4 col-xl-4 thumbnail-img">
-				<div id="modal-trigger1" class="modal-thumbnail-container">
-					<img src="Portfolio/Coursework/CSCI3300/q3/q3_thumbnail.png" alt="JavaScript magic square thumbnail">
-					<h4>Magic Square</h4>
-				</div>
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/Coursework/CSCI3300/q3/index.htm" target="_blank" class="portfolio-links">DEMO</a> 
-						<a href="https://codepen.io/rhlewis/pen/eKyMYd" target="_blank" class="portfolio-links">CODE</a>
-					</div>
-			</div>
-		</div>
-		
-		
-	<!-- MODALS -->
-		<!-- Project modal: Website Performance Optimization Project -->
-		<div id="modal-7" class="modal" onclick="this.style.display='none'">
-			<!-- Modal content -->
-			<div class="modal-content">
-					<!-- Project: Website Performance Optimization Project - header -->
-					<div class="modal-header">
-						<span class="close">&times;</span>
-						<h2>Website Performance Optimization Project</h2>
-					</div>
-					<!-- Project: Website Performance Optimization Project - blog button -->
-					<div class="portfolio-links-container">
-						<a href="Blog/index.html" class="portfolio-links">BLOG</a>
-					</div>	
-					<!-- Project: Website Performance Optimization Project - Description -->
-					<p>A website performance optimization project in which I reduced the page load time of my portfolio site from 22 seconds to 3.
-					I created a web performance optimization budget and outlined specific, measurable performance goals. 
-					I worked to find creative solutions to meet my goals while also making the site more intuitive and user-friendly.
-					<!-- Project: Website Performance Optimization Project - Example image -->
-					<div class="examples-container">
-						<img class="JS-img" src="Blog/wpo-chart6.png" alt="Website Performance Optimization Project chart">
-					</div>
-			</div>
-		</div>
-		<!-- Project modal: personal portfolio site -->
-		<div id="modal-6" class="modal" onclick="this.style.display='none'">
-			<!-- Modal content -->
-			<div class="modal-content">
-					<!-- Project: Personal portfolio site - header -->
-					<div class="modal-header">
-						<span class="close">&times;</span>
-						<h2>Personal Portfolio Website</h2>
-					</div>
-					<!-- Project: Personal portfolio site - code button -->
-					<div class="portfolio-links-container">
-						<a href="https://codepen.io/rhlewis/pen/GGPxya" target="_blank" class="portfolio-links">CODE</a>
-					</div>	
-					<!-- Project: Personal portfolio site - Description -->
-					<p>I built this portfolio site to practice new skills, showcase what I am learning, and have fun with web development! 
-					My goal is to create beautiful, intuitive, user-friendly, informative, and purposeful projects.</p>
-					<!-- Project: Personal portfolio site - Example images -->
-					<div class="examples-container">
-						<img class="desktopImg" src="Images/portfolio_desktop.png" alt="Personal portfolio site desktop screenshot">
-						<img class="phoneImg" src="Images/portfolio_phone.png" alt="Personal portfolio site phone screenshot">
-					</div>
-			</div>
-		</div>
-		<!-- Project modal: Chatbot and WordPress CMS -->
-		<div id="modal-5" class="modal" onclick="this.style.display='none'">
-			<!-- Modal content -->
-			<div class="modal-content">
-					<!-- Project: Chatbot and WordPress CMS - header -->
-					<div class="modal-header">
-						<span class="close">&times;</span>
-						<h2>WordPress E-Commerce Site with ChatBot</h2>
-					</div>
-					<!-- Project: Personal portfolio site - demo button -->
-					<div class="portfolio-links-container">
-						<a href="https://sweetpeachesandcreamtestsite.rachelhlewis.com" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to SPAC WordPress test site-->
-						<a href="https://github.com/rachelhuddles/daisy-chatbot" target="_blank" class="portfolio-links">JSON</a>
-					</div>	
-					<!-- Project: Chatbot and WordPress CMS- Description -->
-					<p>Using skills I developed during a <i>PHP and WordPress as a Content Management System</i> course in school, I upgraded
-					my previous project of a design test site for an upcoming eCommerce store by moving the site over to WordPress and customizing the theme code to perfectly suit the client.
-					<br><br>
-					I also added a chatbot to the site using skills I developed from <i>CognitiveClass.ai 103</i>. I created, tested, deployed, and am continuing to anyalze and improve the chatbot, named Daisy. Daisy 
-					was created using IBM's Watson Assistant and for the purpose of providing customer assistance on product suggestions and basic company procedures. </p>
-					<!-- Project: Chatbot and WordPress CMS - Example images -->
-					<div class="examples-container">
-						<img class="desktopImg" src="Portfolio/Portfolio_Screenshots/chatbot1.png" alt="Desktop site with active chatbot screen capture">
-						<img class="phoneImg" src="Portfolio/Portfolio_Screenshots/chatbot3.png" alt="Mobile site with active chatbot screen capture">
-					</div>
-			</div>
-		</div>
-		<!-- Project modal: Kira Chambers Design Portfolio -->
-		<div id="modal-4" class="modal" onclick="this.style.display='none'">
-			<!-- Modal content -->
-			<div class="modal-content">
-					<!-- Project: Kira Chambers Design Portfolio - header -->
-					<div class="modal-header">
-						<span class="close">&times;</span>
-						<h2>Graphic Designer Online Portfolio</h2>
-					</div>
-					<!-- Project: Kira Chambers Design Portfolio - demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/KiraChambersDesign/index.html" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to KCD site demo -->
-						<a href="https://github.com/rachelhuddles/KCD-portfolio-site" target="_blank" class="portfolio-links">CODE</a> <!-- Link to KCD site code -->
-					</div>	
-					<!-- Project: Kira Chambers Design Portfolio- Description -->
-					<p>I worked closely with the graphic designer to create a site that displays her work while reflecting her personal design style. 
-					I challenged myself to create this site mobile-first, a responsive web design technique which resulted in a product that works seamlessly across all devices. 
-					This site was created using HTML, CSS, and JavaScript. </p>
-					<!-- Project: Kira Chambers Design Portfolio - Example images -->
-					<div class="examples-container">
-						<img class="desktopImg" src="Portfolio/Portfolio_Screenshots/KCD_desktop.png" alt="Graphic design portfolio site desktop screenshot">
-						<img class="tabletImg" src="Portfolio/Portfolio_Screenshots/KCD_tablet.png" alt="Graphic design portfolio site tablet screenshot">
-						<img class="phoneImg" src="Portfolio/Portfolio_Screenshots/KCD_phone.png" alt="Graphic design portfolio site phone screenshot">
-					</div>
-			</div>
-		</div>
-		<!-- Project modal: Sweet Peaches and Cream E-Commerce site -->
-		<div id="modal-3" class="modal" onclick="this.style.display='none'">
-			<!-- Modal content -->
-			<div class="modal-content">
-					<!-- Sweet Peaches and Cream E-Commerce site - header -->
-					<div class="modal-header">
-						<span class="close">&times;</span>
-						<h2>Retail E-Commerce Test Site</h2>
-					</div>
-					<!-- Project: Sweet Peaches and Cream E-Commerce site - demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="Portfolio/SweetPeachesAndCream/index.html" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to SPC site demo -->
-						<a href="https://codepen.io/collection/DkBzpd/" target="_blank" class="portfolio-links">CODE</a> <!-- Link to SPC site code -->
-					</div>
-					<!-- Project: Sweet Peaches and Cream E-Commerce site - Description -->
-					<p>This site, created using HTML, CSS, JavaScript, Bootstrap, and the JavaScript framework simpleCart, 
-					is a design test site for an upcoming eCommerce store. As the shop owner envisioned a site with complex image components, 
-					such as a slideshow embedded into a modal, this project was an excellent JavaScript exercise.</p>
-					<!-- Project: Sweet Peaches and Cream E-Commerce site - Example images -->
-					<div class="examples-container">
-						<img class="desktopImg" src="Portfolio/Portfolio_Screenshots/SPC_desktop.png" alt="Retail site desktop screenshot">
-						<img class="tabletImg" src="Portfolio/Portfolio_Screenshots/SPC_tablet.png" alt="Retail site tablet screenshot">
-						<img class="phoneImg" src="Portfolio/Portfolio_Screenshots/SPC_phone.png" alt="Retail site phone screenshot">
-					</div>
-			</div>
-		</div>
-		<!-- Project modal: JavaScript Arithmetic Functions -->
-		<div id="modal-2" class="modal" onclick="this.style.display='none'">
-			<!-- Modal content -->
-			<div class="modal-content">
-					<!-- Project: JavaScript Arithmetic Functions - header -->
-					<div class="modal-header">
-						<span class="close">&times;</span>
-						<h2>Arithmetic & Arrays - Vanilla JavaScript Program</h2>
-					</div>
-					<!-- Project: JavaScript Arithmetic Functions - demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/Coursework/CSCI3300/q2/index.htm" target="_blank" class="portfolio-links">DEMO</a> 
-						<a href="https://codepen.io/rhlewis/pen/vrpdqr" target="_blank" class="portfolio-links">CODE</a>
-					</div>
-					<!-- Project: JavaScript Arithmetic Functions - Description -->
-					<p>This vanilla JavaScript program was created for my <i>3300 Web Development </i>course. 
-					It is designed to store integer input from the user in an array and perform math operations on the given number set.</p>
-					<!-- Project: JavaScript Arithmetic Functions - Example images -->
-					<div class="examples-container">
-						<img class="JS-img" src="Portfolio/Coursework/CSCI3300/q2/q2-screenshot.png" alt ="JavaScript work example 2">
-					</div>
-			</div>
-		</div>
-		<!-- Project modal: JavaScript Magic Square -->
-		<div id="modal-1" class="modal" onclick="this.style.display='none'">
-			<!-- Modal content -->
-			<div class="modal-content">
-					<!-- Project: JavaScript Magic Square - header -->
-					<div class="modal-header">
-						<span class="close">&times;</span>
-						<h2>Magic Square</h2>
-					</div>
-					<!-- Project: JavaScript Magic Square - demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/Coursework/CSCI3300/q3/index.htm" target="_blank" class="portfolio-links">DEMO</a> 
-						<a href="https://codepen.io/rhlewis/pen/eKyMYd" target="_blank" class="portfolio-links">CODE</a>	
-					</div>
-					<!-- Project: JavaScript Magic Square - Description -->
-					<p>This is a fun re-make of the classic Magic Square math puzzle. Users can input numbers and attempt to solve the Magic Square.
-					It was created using HTML, CSS, and vanilla JavaScript for my <i>3300 Web Development </i>course.</p>
-					<!-- Project: JavaScript Magic Square - Example images -->
-					<div class="examples-container">
-						<img class="JS-img" src="Portfolio/Coursework/CSCI3300/q3/q3-screenshot.png" alt ="JavaScript work example 1">
-					</div>
-			</div>
-		</div>
-	</div> <!-- Ends the large-screen-modal-portfolio class -->
-	
-	<!-- SIMPLE PORTFOLIO VERSION SHOWN ON SMALLER/MOBILE SCREENS -->
-	<div class="small-screen-simple-portfolio">
+  <!-- Section header: About -->
+	<section id="about">
+		<div class="image" data-type="background" data-speed="3"></div>
+		<div class="parallax-content" data-type="content"><h1 class="py-3 section-header">About Me</h1><a href="#about-me"><i class="pt-3 far fa-arrow-alt-circle-down faa-pulse animated fa-2x"></i></a></div>
+	</section>
 
-		<!-- Project: Web Performance Optimization Project (SMALL-SCREEN) -->
-		<div class="small-screen-portfolio-container">
-			<div class="thumbnail-img">
-				<img src="Blog/wpo-project-thumbnail.png" alt="Web Performance Optimization Project thumbnail">
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="Blog/index.html" class="portfolio-links">BLOG</a> 
-					</div>	
-			</div>
-			<h4>Website Performance Optimization Project</h4>
-			<p>A website performance optimization project in which I reduced the page load time of my portfolio site from 22 seconds to 3.
-					I created a web performance optimization budget and outlined specific, measurable performance goals. 
-					I worked to find creative solutions to meet my goals while also making the site more intuitive and user-friendly.</p>
-		</div>
-		
-		<!-- Project: Personal portfolio site (SMALL-SCREEN) -->
-		<div class="small-screen-portfolio-container">
-			<div class="thumbnail-img">
-				<img src="Images/portfolio_thumbnail.png" alt="Personal portfolio thumbnail">
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://codepen.io/rhlewis/pen/GGPxya" target="_blank" class="portfolio-links">CODE</a> 
-					</div>	
-			</div>
-			<h4>Personal Portfolio Website</h4>
-			<p>I built this portfolio site to practice new skills, showcase what I am learning, and have fun with web development! 
-			My goal is to create beautiful, intuitive, user-friendly, informative, and purposeful projects.</p>
-		</div>
-		
-		<!-- Project: Wordpress CMS and Chatbot (SMALL-SCREEN) -->
-		<div class="small-screen-portfolio-container">
-			<div class="thumbnail-img">
-				<img src="Portfolio/Portfolio_Screenshots/chatbot_thumbnail.png" alt="Chatbot project thumbnail">
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://sweetpeachesandcreamtestsite.rachelhlewis.com" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to SPAC WordPress test site-->
-						<a href="https://github.com/rachelhuddles/daisy-chatbot" target="_blank" class="portfolio-links">JSON</a>
-					</div>	
-			</div>
-			<h4>WordPress E-Commerce Site with ChatBot</h4>
-			<p>Using skills I developed during a <i>PHP and WordPress as a Content Management System</i> course in school, I upgraded
-			my previous project of a design test site for an upcoming eCommerce store by moving the site over to WordPress and customizing the theme code to perfectly suit the client.
-			<br><br>
-			I also added a chatbot to the site using skills I developed from <i>CognitiveClass.ai 103</i>. I created, tested, deployed, and am continuing to anyalze and improve the chatbot, named Daisy. Daisy 
-			was created using IBM's Watson Assistant and for the purpose of providing customer assistance on product suggestions and basic company procedures. </p>
-		</div>
-		
-		<!-- Project: Kira Chambers Design portfolio (SMALL-SCREEN) -->
-		<div class="small-screen-portfolio-container">
-			<div class="thumbnail-img">
-				<img src="Portfolio/Portfolio_Screenshots/KCD_thumbnail.png" alt="Kira Chambers Design portfolio thumbnail">
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/KiraChambersDesign/index.html" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to KCD site demo -->
-						<a href="https://codepen.io/rhlewis/pen/vreZPL" target="_blank" class="portfolio-links">CODE</a> <!-- Link to KCD site code -->
-					</div>			
-			</div>	
-			<h4>Graphic Designer Online Portfolio</h4>
-			<p>I worked closely with the graphic designer to create a site that displays her work while reflecting her personal design style. 
-			I challenged myself to create this site mobile-first, a responsive web design technique which resulted in a product that works seamlessly across all devices. 
-			This site was created using HTML, CSS, and JavaScript. </p>
-		</div>
-		
-		<!-- Project: Sweet Peaches and Cream E-Commerce site (SMALL-SCREEN) -->
-		<div class="small-screen-portfolio-container">
-			<div class="thumbnail-img">
-				<img src="Portfolio/Portfolio_Screenshots/SPC_thumbnail.png" alt="Sweet Peaches and Cream E-commerce site thumbnail">
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="Portfolio/SweetPeachesAndCream/index.html" target="_blank" class="portfolio-links">DEMO</a> <!-- Link to SPC site demo -->
-						<a href="https://github.com/rachelhuddles/KCD-portfolio-site" target="_blank" class="portfolio-links">CODE</a> <!-- Link to SPC site code -->
-					</div>		
-			</div>
-			<h4>Retail E-Commerce Test Site</h4>
-			<p>This site, created using HTML, CSS, JavaScript, Bootstrap, and the JavaScript framework simpleCart, 
-			is a design test site for an upcoming eCommerce store. As the shop owner envisioned a site with complex image components, 
-			such as a slideshow embedded into a modal, this project was an excellent JavaScript exercise.</p>
-		</div>
-		
-		<!-- Project: JavaScript Arithmetic Functions(SMALL-SCREEN) -->
-		<div class="small-screen-portfolio-container">
-			<div class="thumbnail-img">
-				<img src="Portfolio/Coursework/CSCI3300/q2/q2_thumbnail.png" alt="JavaScript Arithmetic Functions thumbnail">
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/Coursework/CSCI3300/q2/index.htm" target="_blank" class="portfolio-links">DEMO</a> 
-						<a href="https://codepen.io/rhlewis/pen/vrpdqr" target="_blank" class="portfolio-links">CODE</a>
-					</div>
-			</div>
-			<h4>Arithmetic & Arrays - Vanilla JavaScript Program</h4>
-			<p>This vanilla JavaScript program was created for my <i>3300 Web Development </i>course. 
-			It is designed to store integer input from the user in an array and perform math operations on the given number set.</p>
-		</div>
-		
-		<!-- Project: JavaScript Magic Square (SMALL-SCREEN) -->
-		<div class="small-screen-portfolio-container">
-			<div class="thumbnail-img">
-				<img src="Portfolio/Coursework/CSCI3300/q3/q3_thumbnail.png" alt="JavaScript magic square thumbnail">
-				<!-- Demo and code buttons -->
-					<div class="portfolio-links-container">
-						<a href="https://portfolio.rachelhlewis.com/Coursework/CSCI3300/q3/index.htm" target="_blank" class="portfolio-links">DEMO</a> 
-						<a href="https://codepen.io/rhlewis/pen/eKyMYd" target="_blank" class="portfolio-links">CODE</a>
-					</div>
-			</div>
-			<h4>Magic Square</h4>
-			<p>This is a fun re-make of the classic Magic Square math puzzle. Users can input numbers and attempt to solve the Magic Square.
-			It was created using HTML, CSS, and vanilla JavaScript for my <i>3300 Web Development </i>course.</p>
-		</div>
-	</div> <!-- Ends simple screen version -->
-	
-	<!-- Section: Resume download button -->
-	<div class="resume-link-container">
-		<a href="Resume2018.pdf" class="contact-link" target="_blank">DOWNLOAD A COPY OF MY RESUME</a>
-	</div>
-	
-</div> <!-- Ends the portfolio div -->
+  <section id="about-me">
+    <div class="image" data-type="background" data-speed="2"></div>
+    <div class="parallax-content small mx-auto" data-type="content">
+	<p class="pt-1 text-left">Hi! I'm Rachel. With a strong foundation in computer science, I'm passionate about how we store and interact with data - including database development, data analysis, and designing intuitive applications to interact with databases.</p>	
+	<p class="text-left">I graduated in May 2019 with a degree in Computer Information Technology with a study concentration in Database Administration. My coursework focused on the design, implementation, and administration of databases, including those accessed by Web applications.</p>
+	<p class="text-left">I am naturally curious and love learning new things. In my spare time, I enjoy taking extra professional development courses to help cultivate my interests and have earned several certificates in Data Analysis, UX, and Web Design.</p>
+	<p class="pb-1 text-left">Thank you for taking the time to check out my site! Have a look around and enjoy seeing what I have created!</p></div>
+  </section>
+  
+  <!-- Section header: Contact -->
+	<section id="contact">
+		<div class="image" data-type="background" data-speed="5"></div>
+		<div class="parallax-content" data-type="content"><h1 class="py-3 section-header">Say Hello</h1><a href="#contact-me"><i class="pt-3 far fa-arrow-alt-circle-down faa-pulse animated fa-2x"></i></a></div>
+	</section>
 
-<!-- Section: Contact background image (Third Parallax Image with Contact Text) -->
-<div class="bgimg-3">
-	<div class="headline">
-		<span class="parallax-font">CONTACT</span>
-	</div>
-</div>
-
-<!-- Section: Contact Me -->
-<div id="contact">
-	<h2>GET IN TOUCH</h2>
-		<p> Whether you would like to collaborate on a project or would like to talk about my work, feel free to shoot me an email!</p>
-		
+  <section id="contact-me">
+    <div class="image" data-type="background" data-speed="3"></div>
+    <div class="parallax-content" data-type="content">
+	
 		<!-- E-mail contact button -->
-		<div class="portfolio-links-container">
-			<a href="mailto:rachelhuddles@gmail.com" class="contact-link">SAY HELLO<br><i class="material-icons">email</i></a>
-		</div>
+		<h4>Whether for a potential project, to discuss my work, or just to say hi, send me a message at the link below!</h4>
+		<a href="mailto:rhuddleston2@my.apsu.edu" class="btn btn-light btn-150-width mx-auto my-5" role="button"><i class="fas fa-envelope-open-text fa-4x"></i></a>
+	</div>
+	
+  </section>
 </div>
 
-<!-- Section: Footer -->
-	<hr>
-	<div id="footer">
-		<p>&copy; Rachel Lewis 2018</p>
-	</div>
-
-<script>
-	// Script to open extra options on top navbar (smaller screens only)
-		// Adds the class "responsive" to the topnav
-		function openFunction() {
-			var x = document.getElementById("navbar");
-			if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-		
-	// Script for a sticky navbar
-		// When the user scrolls the page, execute stickyNavbar 
-		window.onscroll = function() {stickyNavbar()};
-
-		// Get the navbar
-		var navbar = document.getElementById("navbar");
-
-		// Get the offset position of the navbar
-		var sticky = navbar.offsetTop;
-
-		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function stickyNavbar() {
-		  if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-		  } else {
-			navbar.classList.remove("sticky");
-		  }
-		}
-	
-	//Script for the modal images in portfolio section
-		// Get the modal and trigger variables
-		var modal7 = document.getElementById('modal-7');
-		var modal6 = document.getElementById('modal-6');
-		var modal5 = document.getElementById('modal-5');
-		var modal4 = document.getElementById('modal-4');
-		var modal3 = document.getElementById('modal-3');
-		var modal2 = document.getElementById('modal-2');
-		var modal1 = document.getElementById('modal-1');
-		
-		var trigger7 = document.getElementById("modal-trigger7");
-		var trigger6 = document.getElementById("modal-trigger6");
-		var trigger5 = document.getElementById("modal-trigger5");
-		var trigger4 = document.getElementById("modal-trigger4");
-		var trigger3 = document.getElementById("modal-trigger3");
-		var trigger2 = document.getElementById("modal-trigger2");
-		var trigger1 = document.getElementById("modal-trigger1");
-		
-		// When the user clicks on the button, open the modal
-		trigger7.onclick = function() {
-			modal7.style.display = "block";
-		}		
-		trigger6.onclick = function() {
-			modal6.style.display = "block";
-		}
-		trigger5.onclick = function() {
-			modal5.style.display = "block";
-		}
-		trigger4.onclick = function() {
-			modal4.style.display = "block";
-		}
-		trigger3.onclick = function() {
-			modal3.style.display = "block";
-		}
-		trigger2.onclick = function() {
-			modal2.style.display = "block";
-		}
-		trigger1.onclick = function() {
-			modal1.style.display = "block";
-		}		
-</script>
+<!-- Footer -->
+<div class="navbar">
+	<span class=" small align-middle mx-auto">&copy; Rachel Lewis 2019  |  <a href="index.html">www.RachelHLewis.com</a></span>
+</div>
 </body>
 </html>

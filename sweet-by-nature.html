@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rachel H. Lewis | Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../style.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans|Montserrat" rel="stylesheet">
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="../../favicon.png">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+	<a class="navbar-brand" href="../../index.html">Rachel H. Lewis <br><span class="small"><em class="small">Full-Stack Developer</em></span></a>
+	<!-- Collapses navbar on small screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+	<!-- Navbar links -->
+    <div class="navbar-collapse collapse justify-content-stretch" id="topnavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html#about">About</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="../../index.html#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main section -->
+<div class="portfolio-section mx-3">
+		<!-- Header -->
+		<h1 class="mt-5 pt-5 pb-2 text-center">Sweet by Nature, Inc.</h1>
+		<h2 class="pb-5 text-center">Employee Data Center</h2>
+		
+		<!-- Information --> 
+		<p class="px-5 py-2"><b>An online portal built for the employee's of Sweet by Nature, Inc.</b> This site was built as part of APSU's senior Systems Analysis & Design course, in which students partner with companies to build automated systems that replace the company's existing manual systems. The Employee Data Center allows Sweet by Nature, Inc. employees to store all critical inventory, customer, and sales information in a database, rather than tracking the information manually. The Data Center also provides the employees with several new, useful data-based reports that provide valuable insight to the business.</p>
+		
+		<!-- Stack -->
+		<p class="px-5 py-2">PostgreSQL <b><b>|</b></b> PHP 7.2 <b>|</b> SQL <b>|</b> Bootstrap 4 <b>|</b> HTML 5 <b>|</b> CSS 3 <b>|</b> JavaScript</p>
+
+		<!-- Video description -->
+		<p class="px-5 small py-2"><b>View a video demo of the data center below! To protect proprietary information, all data shown in the video demo and on the sample website has been changed.</b></p>
+
+		<!-- Demo video -->
+		<div class="embed-responsive embed-responsive-21by9 video mt-4">
+			<iframe class="embed-responsive-item" controls='true' type='video/mp4' src="demo.mp4"></iframe>
+		</div>
+		
+		<!-- Links to code / demo -->
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-6 text-center">
+				<!-- Link to code -->
+				<a href="https://github.com/rachelhuddles/sweet-by-nature" class="btn btn-light mx-auto mt-1 mb-3" role="button" target="_blank">Code</a>
+			</div>
+			<div class="col-6 text-center">		
+				<!-- Link to demo -->
+				<a href="http://sweet-by-nature.byethost13.com" class="btn btn-light mx-auto mt-1 mb-3" role="button" target="_blank">Sample Website</a>
+			</div>
+		</div>
+		</div>
+		
+		<!-- Return to portfolio link -->
+		<a class="text-center lead mt-2 mb-4 mx-auto view-demo raise-hover" href="../../index.html#portfolio-carousel">return to portfolio</a>
+</div>
+
+<!-- Footer -->
+<div class="navbar">
+	<span class=" small align-middle mx-auto">&copy; Rachel Lewis 2019  |  <a href="../../index.html">www.RachelHLewis.com</a></span>
+</div>
+
+<script>
+<!-- Fades the page as it opens -->
+document.body.className += ' fade-out';
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
+</script>	
+</body>
+</html>
